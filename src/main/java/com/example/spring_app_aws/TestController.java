@@ -8,14 +8,14 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/demo")
 public class TestController {
 
-	@GetMapping("/data")
+	@GetMapping("/newproduct")
 	public String getData() {
-	    return "First Message from AWS ECS";
+	    return "New Product registered";
 	}
 
-	@GetMapping("/message")
+	@GetMapping("/product-all")
 	public String getMessage() {
-		return "Second Message from AWS ECS";
+		return "This is product list";
 	}
 
 }
